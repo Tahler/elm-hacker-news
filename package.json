@@ -1,15 +1,15 @@
 {
-  "name": "elm-webpack-starter",
-  "description": "Webpack setup for writing Elm apps",
-  "version": "0.8.6",
+  "name": "elm-hacker-news",
+  "description": "Front-end for Hacker News in Elm.",
+  "version": "0.0.0",
   "license": "MIT",
-  "author": "Peter Morawiec",
+  "author": "Tyler Berry",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moarwick/elm-webpack-starter"
+    "url": "https://github.com/Tahler/elm-hacker-news"
   },
   "scripts": {
-    "start": "webpack-dev-server --hot --inline",
+    "start": "webpack-dev-server --hot --inline --host 0.0.0.0",
     "prebuild": "rimraf dist",
     "build": "webpack",
     "reinstall": "npm i rimraf && rimraf node_modules && npm uninstall -g elm && npm i -g elm && npm i && elm package install"
